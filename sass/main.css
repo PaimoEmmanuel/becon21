@@ -472,6 +472,20 @@ $breakpoint arguments choices:
   z-index: 2;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .heading-vid-wrap h1 {
+    font-size: 3.6875rem;
+    line-height: 4.9375rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-vid-wrap h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
 .heading-vid-wrap a {
   position: absolute;
   display: -webkit-box;
@@ -486,6 +500,21 @@ $breakpoint arguments choices:
       -ms-flex-align: center;
           align-items: center;
   gap: 1.875rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-vid-wrap a {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    gap: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heading-vid-wrap a svg {
+    height: 3rem;
+    width: 3rem;
+  }
 }
 
 .heading-vid-bg {
@@ -717,12 +746,25 @@ $breakpoint arguments choices:
   margin: 7.8125rem auto 9.375rem auto;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .stream {
+    margin: 3.8125rem auto 3.375rem auto;
+  }
+}
+
 .stream h3 {
   font-size: 3.125rem;
   line-height: 4.0625rem;
   font-weight: 700;
   color: #c08b1d;
   margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .stream h3 {
+    font-size: 2.125rem;
+    line-height: 3.0625rem;
+  }
 }
 
 .stream a {
@@ -739,11 +781,23 @@ $breakpoint arguments choices:
   position: relative;
 }
 
+@media only screen and (max-width: 75em) {
+  .give {
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .give {
+    padding: 1.5rem;
+  }
+}
+
 .give-span {
   position: absolute;
   height: 9.75rem;
   width: 9.75rem;
-  background-color: #E6BC65;
+  background-color: #e6bc65;
   border-radius: 50%;
   -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
@@ -751,6 +805,14 @@ $breakpoint arguments choices:
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: -4.875rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .give-span {
+    height: 4rem;
+    width: 4em;
+    top: -2rem;
+  }
 }
 
 .give-primary {
@@ -761,6 +823,13 @@ $breakpoint arguments choices:
   margin: 0 auto;
   text-align: center;
   margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .give-primary {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
 }
 
 .give-link {
@@ -794,7 +863,11 @@ $breakpoint arguments choices:
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 4.875rem;
+  -webkit-column-gap: 4.875rem;
+          column-gap: 4.875rem;
+  row-gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .give-details strong {
@@ -815,7 +888,14 @@ $breakpoint arguments choices:
   margin: 0 auto;
   text-align: center;
   margin-top: 4.375rem;
-  color: #C08B1D;
+  color: #c08b1d;
+}
+
+@media only screen and (max-width: 75em) {
+  .faith-text {
+    font-size: 2.125rem;
+    line-height: 3.0625rem;
+  }
 }
 
 .register {
@@ -1407,6 +1487,7 @@ $breakpoint arguments choices:
 @media only screen and (max-width: 37.5em) {
   .fs {
     padding: 1rem 1rem 0;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1439,6 +1520,13 @@ $breakpoint arguments choices:
   line-height: 2.1875rem;
   max-width: 24rem;
   margin: 1.25rem 0 2.5rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .fs p {
+    text-align: center;
+    margin: 1.25rem auto 2.5rem auto;
+  }
 }
 
 .fs-img {
