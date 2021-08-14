@@ -101,39 +101,3 @@ vids.forEach((vid, index) => {
     }
   });
 });
-
-//Timer
-
-var countDownDate = new Date("Aug 8, 2021 17:30:00").getTime();
-var x = setInterval(function () {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Output the result in an element with id="demo"
-  const timerEl = document.querySelectorAll(".countdown-big");
-  timerEl[0].innerHTML = days;
-  timerEl[1].innerHTML = hours;
-  timerEl[3].innerHTML = minutes;
-  timerEl[5].innerHTML = seconds;
-
-  const timer = document.querySelectorAll(".timer");
-  timer.forEach((timer) => {
-    timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-  });
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    timerEl.forEach((timer, index) => {
-      if (index !== 2 && index !== 4) {
-        timer.innerHTML = "0";
-      }
-    });
-    timer.forEach((timer) => {
-      timer.innerHTML = "0d 0h 0m 0s";
-    });
-  }
-}, 1000);
